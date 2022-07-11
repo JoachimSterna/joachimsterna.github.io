@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/png" href="img/icon.png" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Bankist | Gdy bankowość spotyka minimalistów</title>
+
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <img
+          src="img/logo.png"
+          alt="Bankist logo"
+          class="nav__logo"
+          id="logo"
+          designer="Jonas"
+          data-version-number="3.0"
+        />
+        <ul class="nav__links">
+          <li class="nav__item">
+            <a class="nav__link" href="#section--1">Cechy</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--2">Operacje</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--3">Opinie Klientów</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link nav__link--btn btn--show-modal" href="#"
+              >Otwórz Konto</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__title">
+      
+        <h1>
+          Gdy
+          <span class="highlight">bankowość</span>
+          spotyka<br />
+          <span class="highlight">minimalistów</span>
+        </h1>
+        <h4>Prostsze interakcje bankowe dla prostszego życia</h4>
+        <button class="btn--text btn--scroll-to">Dowiedz się więcej &DownArrow;</button>
+        <img
+          src="img/hero.png"
+          class="header__img"
+          alt="Minimalist bank items"
+        />
+      </div>
+    </header>
+
+    <section class="section" id="section--1">
+      <div class="section__title">
+        <h2 class="section__description">Cechy</h2>
+        <h3 class="section__header">
+        | Wszystko czego potrzebujesz w nowoczesnym banku i więcej
+        </h3>
+      </div>
+
+      <div class="features">
+        <img
+          src="img/digital-lazy.jpg"
+          data-src="img/digital.jpg"
+          alt="Computer"
+          class="features__img lazy-img"
+        />
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-monitor"></use>
+            </svg>
+          </div>
+          <h5 class="features__header">100% cyfrowy bank</h5>
+          <p>
+            Po przejściu do naszego banku już nigdy nie będziesz musiał nosić ze sobą gotówki.
+          </p>
+        </div>
+
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-trending-up"></use>
+            </svg>
+          </div>
+          <h5 class="features__header">Obserwuj jak wartość Twoich pieniędzy rośnie</h5>
+          <p>
+            W naszym banku oferujemy stałe odsetki o wysokości aż 3,5% w skali roku!
+          </p>
+        </div>
+        <img
+          src="img/grow-lazy.jpg"
+          data-src="img/grow.jpg"
+          alt="Plant"
+          class="features__img lazy-img"
+        />
+
+        <img
+          src="img/card-lazy.jpg"
+          data-src="img/card.jpg"
+          alt="Credit card"
+          class="features__img lazy-img"
+        />
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-credit-card"></use>
+            </svg>
+          </div>
+          <h5 class="features__header">Dołączamy darmową kartę kredytową</h5>
+          <p>
+            W naszym banku stawiamy na wygodne płacenie w formie cyfrowej, dlatego przy założeniu konta karta kredytowa jest gratis.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="section--2">
+      <div class="section__title">
+        <h2 class="section__description">Operacje</h2>
+        <h3 class="section__header">
+          Wszystko tak proste jak się da
+        </h3>
+      </div>
+
+      <div class="operations">
+        <div class="operations__tab-container">
+          <button
+            class="btn operations__tab operations__tab--1 operations__tab--active"
+            data-tab="1"
+          >
+            <span>01</span>Natychmiastowe przelewy
+          </button>
+          <button class="btn operations__tab operations__tab--2" data-tab="2">
+            <span>02</span>Natychmiastowe Pożyczki
+          </button>
+          <button class="btn operations__tab operations__tab--3" data-tab="3">
+            <span>03</span>Natychmiastowe Zamknięcie
+          </button>
+        </div>
+        <div
+          class="operations__content operations__content--1 operations__content--active"
+        >
+          <div class="operations__icon operations__icon--1">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-upload"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">
+            Przelej pieniądze do każdego, natychmiast! Bez dodatkowych opłat, bez owijania w bawełne.
+          </h5>
+          <p>
+            W naszym banku to klient jest najważniejszy, dlatego wszystkie przelewy są za darmo i natychmiast.
+          </p>
+        </div>
+
+        <div class="operations__content operations__content--2">
+          <div class="operations__icon operations__icon--2">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-home"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">
+            Kup dom albo spraw by Twoje marzenia stały się rzeczywistością z natychmiastowymi pożyczkami.
+          </h5>
+          <p>
+            Pożyczka na dowolną kwotę, z luźnym terminem spłaty i bez żadnej prowizji.
+          </p>
+        </div>
+        <div class="operations__content operations__content--3">
+          <div class="operations__icon operations__icon--3">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-user-x"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">
+            Już nie potrzebujesz swojego konta? Żaden problem! Zamknij je natychmiast!
+          </h5>
+          <p>
+            W przeciwieństwie do innych banków szanujemy Twoje decyzje i jeśli potrzebujesz zamknąć swoje konto, to zrobimy to natychmiast.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="section--3">
+      <div class="section__title section__title--testimonials">
+        <h2 class="section__description">Nie jesteś jeszcze pewien?</h2>
+        <h3 class="section__header">
+          Milliony bankistów już ułatwiają sobie życie!
+        </h3>
+      </div>
+
+      <div class="slider">
+        <div class="slide">
+          <div class="testimonial">
+            <h5 class="testimonial__header">Najlepsza decyzja finansowa ever!</h5>
+            <blockquote class="testimonial__text">
+              Potrzebowałem pożyczki, ale bałem się, że nie dam rady spłacić. W Bankist ułożyłem sobie wygodny termin i raty i teraz cieszę się nowym samochodem!
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="img/user-1.jpg" alt="" class="testimonial__photo" />
+              <h6 class="testimonial__name">Aarav Lynn</h6>
+              <p class="testimonial__location">San Francisco, USA</p>
+            </address>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="testimonial">
+            <h5 class="testimonial__header">
+              Ostatni krok do zostania całkowitym minimalistą.
+            </h5>
+            <blockquote class="testimonial__text">
+              W innych bankach wszystko jest bardzo skomplikowane i posiadanie gotówki wymagane. W Bankist nareszcie mogę na zawsze pożegnać się z gotówką i zacząć nowe, prostsze i całkowice cyfrowe życie!
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="img/user-2.jpg" alt="" class="testimonial__photo" />
+              <h6 class="testimonial__name">Miyah Miles</h6>
+              <p class="testimonial__location">Londyn, UK</p>
+            </address>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="testimonial">
+            <h5 class="testimonial__header">
+              W końcu uwolniłem się od przestarzałych banków
+            </h5>
+            <blockquote class="testimonial__text">
+              W moim poprzednim banku wszystko musiałem załatwiać na miejscu. W Bankist mogę sobie wygodnie usiąść w fotelu i zaspokoić jakąkolwiek potrzebę.
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="img/user-3.jpg" alt="" class="testimonial__photo" />
+              <h6 class="testimonial__name">Francisco Gomes</h6>
+              <p class="testimonial__location">Lizbona, Portugalia</p>
+            </address>
+          </div>
+        </div>
+
+        <button class="slider__btn slider__btn--left">&larr;</button>
+        <button class="slider__btn slider__btn--right">&rarr;</button>
+        <div class="dots"></div>
+      </div>
+    </section>
+
+    <section class="section section--sign-up">
+      <div class="section__title">
+        <h3 class="section__header">
+          Najlepszy dzień by założyć konto w Bankist był rok temu. Drugi najlepszy jest dziś!
+        </h3>
+      </div>
+      <button class="btn btn--show-modal">Otwórz swoje darmowe konto już dziś!</button>
+    </section>
+
+    <footer class="footer">
+      <ul class="footer__nav">
+        <li class="footer__item">
+          <a class="footer__link" href="#">O nas</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Ceny</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Warunki korzystania z serwisu</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Polityka Prywatności</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Kariery</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Blog</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Skontaktuj się z nami</a>
+        </li>
+      </ul>
+      <img src="img/icon.png" alt="Logo" class="footer__logo" />
+      <p 
+      </p>
+    </footer>
+
+    <div class="modal hidden">
+      <button class="btn--close-modal">&times;</button>
+      <h2 class="modal__header">
+        Otwórz swoje konto bankowe <br />
+        w jedynie  <span class="highlight">5 minut</span>
+      </h2>
+      <form class="modal__form">
+        <label>Imię</label>
+        <input type="text" />
+        <label>Nazwisko</label>
+        <input type="text" />
+        <label>Email</label>
+        <input type="email" />
+        <button class="btn">Następny krok &rarr;</button>
+      </form>
+    </div>
+    <div class="overlay hidden"></div>
+
+  </body>
+</html>
